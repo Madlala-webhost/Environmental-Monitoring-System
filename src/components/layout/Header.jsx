@@ -1,7 +1,7 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { ROUTES } from "../../utility/constants";
-import Logo from "../../assets/logo.png";
+//import Logo from "../../assets/logo.png";
 
 function Header() {
   return (
@@ -9,12 +9,12 @@ function Header() {
       <div className="container">
         <Link
           className="navbar-brand fw-bold d-flex align-items-center text-success"
-          to={ROUTES.HOME}
+          to={ROUTES.DASH}
         >
           <div>
             <div id="icon-container" className="me-2">
               <img
-                src={Logo}
+                //src={Logo}
                 alt="Logo"
                 style={{ width: "120px", height: "120px" }}
               />
@@ -40,7 +40,7 @@ function Header() {
             <li className="nav-item me-4 mb-2 mb-sm-0">
               <Link
                 className="nav-link position-relative btn btn-outline-success rounded-pill px-3 border-2"
-                to={ROUTES.HOME}
+                to={ROUTES.DASH}
                 style={{
                   borderWidth: "2px",
                   borderStyle: "solid",
@@ -49,7 +49,7 @@ function Header() {
                 }}
               >
                 <i className="bi bi-house-add-fill"></i>
-                <span> Home </span>
+                <span> Dashboard </span>
                 <span className="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-success">
                   
                 </span>
@@ -57,14 +57,9 @@ function Header() {
             </li>
 
             <li className="nav-item me-3 mb-2 mb-sm-0">
-              <button
-                className="btn btn-outline-secondary rounded-pill px-3"
-                onClick={toggleTheme}
-              >
-                <i className="bi bi-sun"></i>
-              </button>
+             
             </li>
-            {!isInitialized ? (
+           {/* {!isInitialized ? (
               <li className="nav-item me-2 d-flex align-items-center text-muted">
                 Checking session...
               </li>
@@ -122,7 +117,7 @@ function Header() {
                   </Link>
                 </li>
               </>
-            )}
+            )} */}
           </ul>
         </div>
       </div>
