@@ -1,5 +1,5 @@
-import React from "react";
-import { Link, useNavigate } from "react-router-dom";
+
+import { Link } from "react-router-dom";
 import { ROUTES } from "../../utility/constants";
 //import Logo from "../../assets/logo.png";
 
@@ -7,21 +7,17 @@ function Header() {
   return (
     <nav className="navbar navbar-expand-sm pt-3 border-bottom shadow-sm">
       <div className="container">
-        <Link
+        <div
           className="navbar-brand fw-bold d-flex align-items-center text-success"
           to={ROUTES.DASH}
         >
           <div>
             <div id="icon-container" className="me-2">
-              <img
-                //src={Logo}
-                alt="Logo"
-                style={{ width: "120px", height: "120px" }}
-              />
+              {/* <Logo /> */}
             </div>
           </div>
-          EVS
-        </Link>
+          ENVms
+        </div>
 
         <button
           className="navbar-toggler"
@@ -38,7 +34,7 @@ function Header() {
         <div className="collapse navbar-collapse" id="navbarNav">
           <ul className="navbar-nav ms-auto mb-2 mb-lg-0 d-flex align-items-center">
             <li className="nav-item me-4 mb-2 mb-sm-0">
-              <Link
+              <div
                 className="nav-link position-relative btn btn-outline-success rounded-pill px-3 border-2"
                 to={ROUTES.DASH}
                 style={{
@@ -53,7 +49,7 @@ function Header() {
                 <span className="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-success">
                   
                 </span>
-              </Link>
+              </div>
             </li>
 
             <li className="nav-item me-3 mb-2 mb-sm-0">

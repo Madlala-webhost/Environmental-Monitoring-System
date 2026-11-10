@@ -1,5 +1,6 @@
-import Header from "../components/layout/Header"
-import Footer from "../components/layout/Footer"
+import Header from "../components/layout/Header.jsx"
+import Footer from "../components/layout/Footer.jsx"
+import Dash from "../pages/ Dash.jsx"
 
 function App() {
  
@@ -10,6 +11,7 @@ function App() {
       <div>
         <h1>Environmental Monitoring System</h1>
       </div>
+      <Dash />
       <Footer />
     </>
   )
