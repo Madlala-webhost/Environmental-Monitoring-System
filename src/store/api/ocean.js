@@ -1,9 +1,18 @@
 import { fetchWeatherApi } from "openmeteo";
 
 const params = {
-	latitude: 52.52,
-	longitude: 13.41,
-	hourly: ["temperature_2m", "wind_speed_10m", "wind_direction_10m", "rain", "cloud_cover", "precipitation", "wind_gusts_10m"],
+  latitude: -34.58333,
+  longitude: 19.35,
+  hourly: [
+    "temperature_2m",
+    "wind_speed_10m",
+    "wind_direction_10m",
+    "rain",
+    "cloud_cover",
+    "precipitation",
+    "wind_gusts_10m",
+  ],
+  forecast_days: 1,
 };
 const url = "https://api.open-meteo.com/v1/forecast";
 const responses = await fetchWeatherApi(url, params);
